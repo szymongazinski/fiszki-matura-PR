@@ -27,6 +27,13 @@ const collections = [
   },
 ];
 
+const uiText = {
+  homeEyebrow: "Dzień dobry",
+  homeTitle: "Fiszki do matury rozszerzonej z matematyki",
+  homeLead:
+    "Wybierz kolekcję, przejrzyj przody i tyły fiszek obok siebie, a potem odpal tryb testu na pełnym ekranie.",
+};
+
 const app = document.querySelector("#app");
 const state = {
   selectedCollectionId: null,
@@ -85,10 +92,10 @@ function renderHome() {
   app.innerHTML = `
     <section class="hero">
       <div>
-        <p class="eyebrow">Dzień dobry</p>
-        <h1>Fiszki do matury rozszerzonej z matematyki</h1>
+        <p class="eyebrow">${uiText.homeEyebrow}</p>
+        <h1>${uiText.homeTitle}</h1>
         <p class="lead">
-          Wybierz kolekcję, przejrzyj przody i tyły fiszek obok siebie, a potem odpal tryb testu na pełnym ekranie.
+          ${uiText.homeLead}
         </p>
       </div>
       <div class="stats-strip" aria-label="Statystyki fiszek">
