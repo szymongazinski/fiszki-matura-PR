@@ -85,7 +85,7 @@ function renderHome() {
   app.innerHTML = `
     <section class="hero">
       <div>
-        <p class="eyebrow">Dzień dobry, czas ujarzmić parametry</p>
+        <p class="eyebrow">Dzień dobry</p>
         <h1>Fiszki do matury rozszerzonej z matematyki</h1>
         <p class="lead">
           Wybierz kolekcję, przejrzyj przody i tyły fiszek obok siebie, a potem odpal tryb testu na pełnym ekranie.
